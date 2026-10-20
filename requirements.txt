@@ -5,3 +5,4 @@ flask
 opencv-python-headless
 numpy
 pillow
+mtcnn

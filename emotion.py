@@ -2,12 +2,18 @@ import cv2
 from deepface import DeepFace
 
 def detect_emotions(image_bgr):
-    """Return a list with one dict per face found (empty list if none.)"""
+    """Return a list with one dict per face found (empty list if none)."""
     try:
-        results = DeepFace.analyze(image_bgr, actions=["emotion"], enforce_detection=True,)
-    except ValueError:
-        return[]
-    return results
+        return DeepFace.analyze(
+    image_bgr,
+    actions=["emotion"],
+    enforce_detection=True,
+    detector_backend="mtcnn",
+)
+    except ValueError as e:
+        if "Face could not be detected" in str(e):
+            return []
+        raise
 
 def draw_results(image_bgr, results):
     """Draw a box and the emotion label on each detected face."""
