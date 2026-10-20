@@ -2,7 +2,7 @@
 
 A web app that detects faces in a webcam photo or an uploaded image and predicts each person's emotion, with a probability chart for all 7 emotions.
 
-![Demo](Screenshot 2026-10-20 211611.png)
+![Demo](Screenshot.png)
 
 ## Features
 - Take a photo with your webcam or upload an image
