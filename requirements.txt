@@ -2,6 +2,6 @@ streamlit
 deepface
 tf-keras
 flask
-opencv-python-headless
+opencv-python-headless<5
 numpy
 pillow
