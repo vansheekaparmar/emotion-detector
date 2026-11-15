@@ -32,4 +32,4 @@ if file is not None:
          for i, face in enumerate(results, start=1):
              st.subheader(f"Face{i}: {face['dominant_emotion']. title()}")
              st.bar_chart(pd.Series(face["emotion"]))
-st.caption("Limitation: results depend on lighting and camera angle, and a facialexpression dosen't always match what someone actully feels.")
+st.caption("Limitations: results depend on lighting and camera angle, and a facial expression doesn't always match what someone actually feels.")
