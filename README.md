@@ -10,6 +10,9 @@ A web app that detects faces in a webcam photo or an uploaded image and predicts
 - Shows a bar chart of the 7 emotion probabilities (happy, sad, angry, fear, surprise, disgust, neutral)
 - Shows a clear message when no face is found
 
+## What's new in v2
+Live video emotion detection: open the **Live Video** page, press START, and the app labels emotions on your webcam stream in near-real-time.
+
 ## Tech stack
 Python · DeepFace · OpenCV · Streamlit · NumPy · Pillow
 
